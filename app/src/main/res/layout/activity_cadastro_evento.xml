@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#F5F5F5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar Evento"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#6200EE"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/edtNomeEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do evento"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/edtDataEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Data do evento"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/edtHorarioEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Horário"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/edtLocalEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Local do evento"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/edtDescricaoEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descrição"
+            android:minLines="3"
+            android:gravity="top"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/edtTipoEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tipo do evento"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/edtQtdConvidados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantidade máxima de convidados"
+            android:inputType="number"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecionar Convidados"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <ListView
+            android:id="@+id/listViewPessoas"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:choiceMode="multipleChoice"/>
+
+        <Button
+            android:id="@+id/btnSalvarEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar Evento"/>
+
+    </LinearLayout>
+
+</ScrollView>
