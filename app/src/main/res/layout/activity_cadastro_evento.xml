@@ -1,98 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- Tela responsável pelo cadastro de novos eventos -->
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Layout principal que organiza todos os componentes verticalmente -->
-    <LinearLayout android:layout_width="match_parent" <!-- Ocupa toda a largura da tela -->
-    android:layout_height="wrap_content" <!-- Altura ajustada conforme o conteúdo -->
-    android:orientation="vertical" <!-- Organiza os componentes de cima para baixo -->
-    android:padding="20dp" <!-- Adiciona espaçamento interno -->
-    android:background="#F5F5F5"> <!-- Define a cor de fundo da tela -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#F5F5F5">
 
-    <!-- Título da tela -->
-    <TextView android:layout_width="wrap_content" <!-- Largura conforme o tamanho do texto -->
-    android:layout_height="wrap_content" <!-- Altura conforme o tamanho do texto -->
-    android:text="Cadastrar Evento" <!-- Texto exibido -->
-    android:textSize="28sp" <!-- Tamanho da fonte -->
-    android:textStyle="bold" <!-- Deixa o texto em negrito -->
-    android:textColor="#6200EE" <!-- Cor do texto -->
-    android:layout_marginBottom="24dp"/> <!-- Espaçamento abaixo do componente -->
+        <!-- Título da tela -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar Evento"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#6200EE"
+            android:layout_marginBottom="24dp"/>
 
-    <!-- Campo para informar o nome do evento -->
-    <EditText android:id="@+id/edtNomeEvento" <!-- Identificador do componente -->
-    android:layout_width="match_parent" <!-- Ocupa toda a largura -->
-    android:layout_height="wrap_content" <!-- Altura automática -->
-    android:hint="Nome do evento" <!-- Texto de orientação -->
-    android:layout_marginBottom="16dp"/> <!-- Espaçamento inferior -->
+        <!-- Campo para informar o nome do evento -->
+        <EditText
+            android:id="@+id/edtNomeEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do evento"
+            android:layout_marginBottom="16dp"/>
 
-    <!-- Campo para informar a data do evento -->
-    <EditText android:id="@+id/edtDataEvento"  <!-- Identificador único do campo -->
-    android:layout_width="match_parent" <!-- Faz o campo ocupar toda a largura disponível -->
-    android:layout_height="wrap_content" <!-- Ajusta a altura automaticamente conforme o conteúdo -->
-    android:hint="Data do evento" <!-- Texto exibido como orientação ao usuário -->
-    android:layout_marginBottom="16dp"/> <!-- Espaçamento inferior entre este campo e o próximo -->
+        <!-- Campo para informar a data do evento -->
+        <EditText
+            android:id="@+id/edtDataEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Data do evento"
+            android:layout_marginBottom="16dp"/>
 
-    <!-- Campo para informar o horário do evento -->
-    <EditText android:id="@+id/edtHorarioEvento" <!-- Identificador único do campo -->
-    android:layout_width="match_parent" <!-- Faz o campo ocupar toda a largura disponível -->
-    android:layout_height="wrap_content" <!-- Ajusta a altura automaticamente conforme o conteúdo -->
-    android:hint="Horário" <!-- Texto exibido como orientação ao usuário -->
-    android:layout_marginBottom="16dp"/> <!-- Espaçamento inferior entre este campo e o próximo -->
+        <!-- Campo para informar o horário do evento -->
+        <EditText
+            android:id="@+id/edtHorarioEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Horário"
+            android:layout_marginBottom="16dp"/>
 
-    <!-- Campo para informar o local onde o evento será realizado -->
-    <EditText android:id="@+id/edtLocalEvento" <!-- Identificador único do campo -->
-    android:layout_width="match_parent" <!-- Faz o campo ocupar toda a largura disponível -->
-    android:layout_height="wrap_content" <!-- Ajusta a altura automaticamente conforme o conteúdo -->
-    android:hint="Local do evento" <!-- Texto exibido como orientação ao usuário -->
-    android:layout_marginBottom="16dp"/> <!-- Espaçamento inferior entre este campo e o próximo -->
+        <!-- Campo para informar o local do evento -->
+        <EditText
+            android:id="@+id/edtLocalEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Local do evento"
+            android:layout_marginBottom="16dp"/>
 
-    <!-- Campo destinado à descrição do evento -->
-    <EditText android:id="@+id/edtDescricaoEvento" <!-- Identificador único do campo -->
-    android:layout_width="match_parent" <!-- Faz o campo ocupar toda a largura disponível -->
-    android:layout_height="wrap_content" <!-- Ajusta a altura automaticamente conforme o conteúdo -->
-    android:hint="Descrição" <!-- Texto exibido como orientação ao usuário -->
-    android:minLines="3" <!-- Define altura mínima para três linhas de texto -->
-    android:gravity="top" <!-- Faz o texto iniciar na parte superior do campo -->
-    android:layout_marginBottom="16dp"/> <!-- Espaçamento inferior entre este campo e o próximo -->
+        <!-- Campo destinado à descrição do evento -->
+        <EditText
+            android:id="@+id/edtDescricaoEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descrição"
+            android:minLines="3"
+            android:gravity="top"
+            android:layout_marginBottom="16dp"/>
 
-    <!-- Campo para informar o tipo do evento -->
-    <EditText android:id="@+id/edtTipoEvento" <!-- Identificador único do campo -->
-    android:layout_width="match_parent" <!-- Faz o campo ocupar toda a largura disponível -->
-    android:layout_height="wrap_content" <!-- Ajusta a altura automaticamente conforme o conteúdo -->
-    android:hint="Tipo do evento" <!-- Texto exibido como orientação ao usuário -->
-    android:layout_marginBottom="16dp"/> <!-- Espaçamento inferior entre este campo e o próximo -->
+        <!-- Campo para informar o tipo do evento -->
+        <EditText
+            android:id="@+id/edtTipoEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tipo do evento"
+            android:layout_marginBottom="16dp"/>
 
-    <!-- Campo para definir a quantidade máxima de convidados -->
-    <EditText android:id="@+id/edtQtdConvidados" <!-- Identificador único do campo -->
-    android:layout_width="match_parent" <!-- Faz o campo ocupar toda a largura disponível -->
-    android:layout_height="wrap_content" <!-- Ajusta a altura automaticamente conforme o conteúdo -->
-    android:hint="Quantidade máxima de convidados" <!-- Texto exibido como orientação ao usuário -->
-    android:inputType="number" <!-- Permite apenas a digitação de números -->
-    android:layout_marginBottom="24dp"/> <!-- Espaçamento inferior entre este campo e o próximo -->
+        <!-- Campo para definir a quantidade máxima de convidados -->
+        <EditText
+            android:id="@+id/edtQtdConvidados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantidade máxima de convidados"
+            android:inputType="number"
+            android:layout_marginBottom="24dp"/>
 
-    <!-- Título da seção de seleção de convidados -->
-    <TextView android:layout_width="wrap_content" <!-- Largura ajustada ao tamanho do texto -->
-    android:layout_height="wrap_content" <!-- Altura ajustada ao tamanho do texto -->
-    android:text="Selecionar Convidados" <!-- Texto exibido ao usuário -->
-    android:textSize="20sp" <!-- Tamanho da fonte -->
-    android:textStyle="bold" <!-- Exibe o texto em negrito -->
-    android:layout_marginBottom="12dp"/> <!-- Espaçamento inferior -->
+        <!-- Título da seção de seleção de convidados -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecionar Convidados"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
 
-    <!-- Lista utilizada para exibir os convidados disponíveis -->
-    <ListView android:id="@+id/listViewPessoas" <!-- Identificador único da lista -->
-    android:layout_width="match_parent" <!-- Faz a lista ocupar toda a largura disponível -->
-    android:layout_height="200dp" <!-- Define altura fixa para a lista -->
-    android:choiceMode="multipleChoice"/> <!-- Permite selecionar vários convidados ao mesmo tempo -->
+        <!-- Lista utilizada para exibir os convidados disponíveis -->
+        <ListView
+            android:id="@+id/listViewPessoas"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:choiceMode="multipleChoice"/>
 
-    <!-- Botão responsável por salvar o evento cadastrado -->
-    <Button android:id="@+id/btnSalvarEvento" <!-- Identificador único do botão -->
-    android:layout_width="match_parent" <!-- Faz o botão ocupar toda a largura disponível -->
-    android:layout_height="wrap_content" <!-- Altura ajustada automaticamente -->
-    android:text="Salvar Evento"/> <!-- Texto exibido dentro do botão -->
+        <!-- Botão responsável por salvar o evento cadastrado -->
+        <Button
+            android:id="@+id/btnSalvarEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar Evento"/>
 
-</LinearLayout>
+    </LinearLayout>
 
-    </ScrollView>
+</ScrollView>

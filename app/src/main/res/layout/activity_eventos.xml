@@ -1,34 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?> <!-- Define a versão XML utilizada pelo Android -->
+<?xml version="1.0" encoding="utf-8"?>
 
-<!-- Layout principal da tela inicial de gerenciamento de eventos -->
+<!-- Tela de gerenciamento de eventos -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" <!-- Importa os atributos padrão do Android -->
-    android:layout_width="match_parent" <!-- Faz o layout ocupar toda a largura da tela -->
-    android:layout_height="match_parent" <!-- Faz o layout ocupar toda a altura da tela -->
-    android:orientation="vertical" <!-- Organiza os componentes verticalmente -->
-    android:padding="20dp" <!-- Adiciona espaçamento interno de 20dp -->
-    android:background="#F5F5F5"> <!-- Define a cor de fundo da tela -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F5F5F5">
 
     <!-- Título principal da tela -->
-<TextView android:layout_width="wrap_content" <!-- Largura ajustada ao tamanho do texto -->
-    android:layout_height="wrap_content" <!-- Altura ajustada ao tamanho do texto -->
-    android:text="Eventos" <!-- Texto exibido para o usuário -->
-    android:textSize="28sp" <!-- Define o tamanho da fonte -->
-    android:textStyle="bold" <!-- Define o texto em negrito -->
-    android:textColor="#6200EE" <!-- Define a cor do texto -->
-    android:layout_marginBottom="24dp"/> <!-- Adiciona espaçamento inferior -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eventos"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#6200EE"
+        android:layout_marginBottom="24dp"/>
 
-    <!-- Botão responsável por abrir a tela de cadastro de um novo evento -->
-<Button android:id="@+id/btnNovoEvento" <!-- Identificador único do botão -->
-    android:layout_width="match_parent" <!-- Faz o botão ocupar toda a largura da tela -->
-    android:layout_height="wrap_content" <!-- Ajusta a altura automaticamente -->
-    android:text="Cadastrar Evento"/> <!-- Texto exibido dentro do botão -->
+    <!-- Botão para abrir a tela de cadastro de eventos -->
+    <Button
+        android:id="@+id/btnNovoEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar Evento"/>
 
-    <!-- Botão responsável por exibir a lista de eventos já cadastrados -->
-<Button android:id="@+id/btnVerEventos" <!-- Identificador único do botão -->
-    android:layout_width="match_parent" <!-- Faz o botão ocupar toda a largura da tela -->
-    android:layout_height="wrap_content" <!-- Ajusta a altura automaticamente -->
-    android:text="Ver Eventos" <!-- Texto exibido dentro do botão -->
-    android:layout_marginTop="16dp"/> <!-- Adiciona espaçamento superior em relação ao botão anterior -->
+    <!-- Botão para visualizar os eventos cadastrados -->
+    <Button
+        android:id="@+id/btnVerEventos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Eventos"
+        android:layout_marginTop="16dp"/>
 
-    </LinearLayout> <!-- Fecha o layout principal -->
+</LinearLayout>
