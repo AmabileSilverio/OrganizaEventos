@@ -1,48 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp"
-    android:background="#F5F5F5">
+<?xml version="1.0" encoding="utf-8"?> <!-- Define a versão XML utilizada pelo Android -->
 
-    <TextView
-        android:id="@+id/txtNomeEvento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nome Evento"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="#6200EE"
-        android:layout_marginBottom="16dp"/>
+<!-- Layout principal responsável pela exibição dos detalhes de um evento -->
 
-    <TextView
-        android:id="@+id/txtDataEvento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Data"
-        android:textSize="18sp"
-        android:layout_marginBottom="8dp"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" <!-- Importa os atributos padrão do Android -->
+    android:layout_width="match_parent" <!-- Faz o layout ocupar toda a largura da tela -->
+    android:layout_height="match_parent" <!-- Faz o layout ocupar toda a altura da tela -->
+    android:orientation="vertical" <!-- Organiza os componentes verticalmente -->
+    android:padding="20dp" <!-- Adiciona espaçamento interno de 20dp -->
+    android:background="#F5F5F5"> <!-- Define a cor de fundo da tela -->
 
-    <TextView
-        android:id="@+id/txtLocalEvento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Local"
-        android:textSize="18sp"
-        android:layout_marginBottom="24dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Convidados"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="12dp"/>
+    <!-- Campo responsável por exibir o nome do evento selecionado -->
+<TextView android:id="@+id/txtNomeEvento" <!-- Identificador único do campo -->
+    android:layout_width="wrap_content" <!-- Largura ajustada ao tamanho do texto -->
+    android:layout_height="wrap_content" <!-- Altura ajustada ao tamanho do texto -->
+    android:text="Nome Evento" <!-- Texto inicial exibido ao usuário -->
+    android:textSize="28sp" <!-- Define o tamanho da fonte -->
+    android:textStyle="bold" <!-- Define o texto em negrito -->
+    android:textColor="#6200EE" <!-- Define a cor do texto -->
+    android:layout_marginBottom="16dp"/> <!-- Adiciona espaçamento inferior -->
 
-    <ListView
-        android:id="@+id/listViewConvidadosEvento"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+    <!-- Campo responsável por exibir a data do evento -->
+<TextView android:id="@+id/txtDataEvento" <!-- Identificador único do campo -->
+    android:layout_width="wrap_content" <!-- Largura ajustada ao tamanho do texto -->
+    android:layout_height="wrap_content" <!-- Altura ajustada ao tamanho do texto -->
+    android:text="Data" <!-- Texto inicial exibido ao usuário -->
+    android:textSize="18sp" <!-- Define o tamanho da fonte -->
+    android:layout_marginBottom="8dp"/> <!-- Adiciona espaçamento inferior -->
 
-</LinearLayout>
+    <!-- Campo responsável por exibir o local onde o evento será realizado -->
+<TextView android:id="@+id/txtLocalEvento" <!-- Identificador único do campo -->
+    android:layout_width="wrap_content" <!-- Largura ajustada ao tamanho do texto -->
+    android:layout_height="wrap_content" <!-- Altura ajustada ao tamanho do texto -->
+    android:text="Local" <!-- Texto inicial exibido ao usuário -->
+    android:textSize="18sp" <!-- Define o tamanho da fonte -->
+    android:layout_marginBottom="24dp"/> <!-- Adiciona espaçamento inferior -->
+
+    <!-- Título da seção destinada à listagem dos convidados do evento -->
+<TextView android:layout_width="wrap_content" <!-- Largura ajustada ao tamanho do texto -->
+    android:layout_height="wrap_content" <!-- Altura ajustada ao tamanho do texto -->
+    android:text="Convidados" <!-- Texto exibido para identificar a seção -->
+    android:textSize="22sp" <!-- Define o tamanho da fonte -->
+    android:textStyle="bold" <!-- Define o texto em negrito -->
+    android:layout_marginBottom="12dp"/> <!-- Adiciona espaçamento inferior -->
+
+    <!-- Lista responsável por exibir todos os convidados vinculados ao evento -->
+<ListView android:id="@+id/listViewConvidadosEvento" <!-- Identificador único da lista -->
+    android:layout_width="match_parent" <!-- Faz a lista ocupar toda a largura disponível -->
+    android:layout_height="match_parent"/> <!-- Faz a lista ocupar o restante da altura da tela -->
+
+
+    </LinearLayout> <!-- Fecha o layout principal -->

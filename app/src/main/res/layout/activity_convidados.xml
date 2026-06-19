@@ -1,38 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp"
-    android:background="#F5F5F5">
+<?xml version="1.0" encoding="utf-8"?> <!-- Define a versão XML utilizada pelo Android -->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Adicionar Convidado"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="#6200EE"
-        android:layout_marginBottom="24dp"/>
+<!-- Layout principal responsável pela tela de adição de convidados -->
 
-    <EditText
-        android:id="@+id/edtNomeEventoConvidado"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nome do evento"
-        android:layout_marginBottom="16dp"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" <!-- Importa os atributos padrão do Android -->
+    android:layout_width="match_parent" <!-- Faz o layout ocupar toda a largura da tela -->
+    android:layout_height="match_parent" <!-- Faz o layout ocupar toda a altura da tela -->
+    android:orientation="vertical" <!-- Organiza os componentes verticalmente -->
+    android:padding="20dp" <!-- Adiciona espaçamento interno de 20dp -->
+    android:background="#F5F5F5"> <!-- Define a cor de fundo da tela -->
 
-    <EditText
-        android:id="@+id/edtNomePessoaConvidado"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nome da pessoa"
-        android:layout_marginBottom="24dp"/>
 
-    <Button
-        android:id="@+id/btnAdicionarConvidado"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Adicionar Convidado"/>
+    <!-- Título principal da tela de cadastro de convidados -->
+<TextView android:layout_width="wrap_content" <!-- Largura ajustada ao tamanho do texto -->
+    android:layout_height="wrap_content" <!-- Altura ajustada ao tamanho do texto -->
+    android:text="Adicionar Convidado" <!-- Texto exibido para o usuário -->
+    android:textSize="28sp" <!-- Define o tamanho da fonte -->
+    android:textStyle="bold" <!-- Define o texto em negrito -->
+    android:textColor="#6200EE" <!-- Define a cor do texto -->
+    android:layout_marginBottom="24dp"/> <!-- Adiciona espaçamento inferior -->
 
-</LinearLayout>
+    <!-- Campo utilizado para informar o nome do evento ao qual o convidado será vinculado -->
+<EditText android:id="@+id/edtNomeEventoConvidado" <!-- Identificador único do campo -->
+    android:layout_width="match_parent" <!-- Faz o campo ocupar toda a largura da tela -->
+    android:layout_height="wrap_content" <!-- Ajusta a altura automaticamente -->
+    android:hint="Nome do evento" <!-- Texto de orientação exibido ao usuário -->
+    android:layout_marginBottom="16dp"/> <!-- Adiciona espaçamento inferior -->
+
+    <!-- Campo utilizado para informar o nome da pessoa que será adicionada como convidado -->
+<EditText android:id="@+id/edtNomePessoaConvidado" <!-- Identificador único do campo -->
+    android:layout_width="match_parent" <!-- Faz o campo ocupar toda a largura da tela -->
+    android:layout_height="wrap_content" <!-- Ajusta a altura automaticamente -->
+    android:hint="Nome da pessoa" <!-- Texto de orientação exibido ao usuário -->
+    android:layout_marginBottom="24dp"/> <!-- Adiciona espaçamento inferior -->
+
+    <!-- Botão responsável por adicionar o convidado ao evento informado -->
+<Button android:id="@+id/btnAdicionarConvidado" <!-- Identificador único do botão -->
+    android:layout_width="match_parent" <!-- Faz o botão ocupar toda a largura da tela -->
+    android:layout_height="wrap_content" <!-- Ajusta a altura automaticamente -->
+    android:text="Adicionar Convidado"/> <!-- Texto exibido dentro do botão -->
+
+
+    </LinearLayout> <!-- Fecha o layout principal -->
+

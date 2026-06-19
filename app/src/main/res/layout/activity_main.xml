@@ -1,42 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="24dp"
-    android:background="#F3F4F6">
+<?xml version="1.0" encoding="utf-8"?> <!-- Define a versão XML utilizada pelo Android -->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="OrganizaEventos"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        android:textColor="#5B21B6"
-        android:layout_marginBottom="40dp"/>
+<!-- Layout principal da tela inicial do aplicativo -->
 
-    <Button
-        android:id="@+id/btnEventos"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="📅 Eventos"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textAllCaps="false"
-        android:backgroundTint="#7C3AED"
-        android:textColor="#FFFFFF"
-        android:layout_marginBottom="20dp"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" <!-- Importa os atributos padrão do Android -->
+    android:layout_width="match_parent" <!-- Faz o layout ocupar toda a largura da tela -->
+    android:layout_height="match_parent" <!-- Faz o layout ocupar toda a altura da tela -->
+    android:orientation="vertical" <!-- Organiza os componentes verticalmente -->
+    android:gravity="center" <!-- Centraliza os componentes dentro da tela -->
+    android:padding="24dp" <!-- Adiciona espaçamento interno de 24dp -->
+    android:background="#F3F4F6"> <!-- Define a cor de fundo da tela -->
 
-    <Button
-        android:id="@+id/btnPessoas"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="👤 Pessoas"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textAllCaps="false"
-        android:backgroundTint="#7C3AED"
-        android:textColor="#FFFFFF"/>
+    <!-- Título principal do aplicativo exibido na tela inicial -->
+<TextView android:layout_width="wrap_content" <!-- Largura ajustada ao tamanho do texto -->
+    android:layout_height="wrap_content" <!-- Altura ajustada ao tamanho do texto -->
+    android:text="OrganizaEventos" <!-- Texto exibido para o usuário -->
+    android:textSize="34sp" <!-- Define o tamanho da fonte -->
+    android:textStyle="bold" <!-- Define o texto em negrito -->
+    android:textColor="#5B21B6" <!-- Define a cor do texto -->
+    android:layout_marginBottom="40dp"/> <!-- Adiciona espaçamento inferior -->
 
-</LinearLayout>
+    <!-- Botão responsável por acessar o módulo de gerenciamento de eventos -->
+<Button android:id="@+id/btnEventos" <!-- Identificador único do botão -->
+    android:layout_width="match_parent" <!-- Faz o botão ocupar toda a largura da tela -->
+    android:layout_height="60dp" <!-- Define altura fixa de 60dp -->
+    android:text="📅 Eventos" <!-- Texto exibido dentro do botão -->
+    android:textSize="18sp" <!-- Define o tamanho da fonte -->
+    android:textStyle="bold" <!-- Define o texto em negrito -->
+    android:textAllCaps="false" <!-- Mantém o texto sem converter para maiúsculas -->
+    android:backgroundTint="#7C3AED" <!-- Define a cor de fundo do botão -->
+    android:textColor="#FFFFFF" <!-- Define a cor do texto do botão -->
+    android:layout_marginBottom="20dp"/> <!-- Adiciona espaçamento inferior -->
+
+    <!-- Botão responsável por acessar o módulo de gerenciamento de pessoas -->
+<Button android:id="@+id/btnPessoas" <!-- Identificador único do botão -->
+    android:layout_width="match_parent" <!-- Faz o botão ocupar toda a largura da tela -->
+    android:layout_height="60dp" <!-- Define altura fixa de 60dp -->
+    android:text="👤 Pessoas" <!-- Texto exibido dentro do botão -->
+    android:textSize="18sp" <!-- Define o tamanho da fonte -->
+    android:textStyle="bold" <!-- Define o texto em negrito -->
+    android:textAllCaps="false" <!-- Mantém o texto sem converter para maiúsculas -->
+    android:backgroundTint="#7C3AED" <!-- Define a cor de fundo do botão -->
+    android:textColor="#FFFFFF" <!-- Define a cor do texto do botão -->
+
+
+    </LinearLayout> <!-- Fecha o layout principal -->

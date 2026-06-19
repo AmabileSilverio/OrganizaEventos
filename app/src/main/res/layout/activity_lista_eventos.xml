@@ -1,23 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:background="#F5F5F5">
+<?xml version="1.0" encoding="utf-8"?> <!-- Define a versão XML utilizada pelo Android -->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lista de Eventos"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="#6200EE"
-        android:layout_marginBottom="16dp"/>
+<!-- Layout principal da tela responsável por exibir a lista de eventos cadastrados -->
 
-    <ListView
-        android:id="@+id/listViewEventos"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" <!-- Importa os atributos padrão do Android -->
+    android:layout_width="match_parent" <!-- Faz o layout ocupar toda a largura da tela -->
+    android:layout_height="match_parent" <!-- Faz o layout ocupar toda a altura da tela -->
+    android:orientation="vertical" <!-- Organiza os componentes verticalmente -->
+    android:padding="16dp" <!-- Adiciona espaçamento interno de 16dp -->
+    android:background="#F5F5F5"> <!-- Define a cor de fundo da tela -->
 
-</LinearLayout>
+    <!-- Título da tela que informa ao usuário que serão exibidos os eventos cadastrados -->
+<TextView android:layout_width="wrap_content" <!-- Largura ajustada ao tamanho do texto -->
+    android:layout_height="wrap_content" <!-- Altura ajustada ao tamanho do texto -->
+    android:text="Lista de Eventos" <!-- Texto exibido para o usuário -->
+    android:textSize="28sp" <!-- Define o tamanho da fonte -->
+    android:textStyle="bold" <!-- Define o texto em negrito -->
+    android:textColor="#6200EE" <!-- Define a cor do texto -->
+    android:layout_marginBottom="16dp"/> <!-- Adiciona espaçamento inferior -->
+
+    <!-- Lista utilizada para exibir todos os eventos cadastrados no sistema -->
+<ListView android:id="@+id/listViewEventos" <!-- Identificador único da lista -->
+    android:layout_width="match_parent" <!-- Faz a lista ocupar toda a largura disponível -->
+    android:layout_height="match_parent"/> <!-- Faz a lista ocupar toda a altura restante da tela -->
+
+
+    </LinearLayout> <!-- Fecha o layout principal -->
+
